@@ -4,7 +4,6 @@ resource "google_compute_instance_template" "default" {
   name_prefix = "default-"
 
   machine_type = "${var.machine_type}"
-
   region = "${var.region}"
 
   tags = ["${concat(list("allow-ssh"), var.target_tags)}"]
