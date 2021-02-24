@@ -15,7 +15,7 @@ variable region {
 
 variable zone {
   description = "Zone for managed instance groups."
-  default     = "us-central1-f"
+  default     = "us-central1-a"
 }
 
 variable network {
@@ -39,7 +39,7 @@ variable name {
 
 variable size {
   description = "Target size of the managed instance group."
-  default     = 1
+  default     = 3
 }
 
 variable startup_script {
